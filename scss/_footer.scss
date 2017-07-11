@@ -1,0 +1,57 @@
+footer {
+    font-family: 'Sarpanch', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    min-height: 10vh;
+    max-height: 10vh;
+    background: white;
+    box-sizing: border-box;
+    color:#999;
+    font-size: 0.8em;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+    //overflow: hidden;
+
+    p {
+        padding: 10px 0px 10px 0px;
+        margin: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        flex-basis: 250px;
+        box-sizing: border-box;
+        border-bottom:1px solid #dddddd;
+        //overflow: hidden;
+        text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+        transition-property: all;
+        transition-duration: 2s;
+        transition-timing-function: ease;
+        z-index: 100;
+
+        &:hover {
+            color: black;
+            text-shadow: 0px 1px 1px rgba(255, 255, 255, 1);
+
+        }
+    }
+}
+
+@media all and (max-width: 620px){
+
+    #main > footer { 
+        min-height: 10vh;	
+    }
+
+    footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+        font-size: 12px;
+        min-height: 10vh;
+    }
+}

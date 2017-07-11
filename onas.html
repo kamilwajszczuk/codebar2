@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Strony www, aplikacje internetowe, aplikacje biurowe w chmurze">
+        <title>O NAS</title>
+        <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"> 
+        <link rel="stylesheet" href="flex.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">CODEBAR</a>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </header>
+
+        <div id="main" class="conteiner">
+            <ul class="triangle">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+            <nav class="menu">
+                <ul>
+                    <li class="flex-item"><a href="onas.html">O nas</a></li>
+                    <li class="flex-item"><a href="">Oferta</a></li>
+                    <li class="flex-item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="flex-item"><a href="">Skills</a></li>
+                    <li class="flex-item"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+            <article class="onas">
+
+                <h2>O nas</h2>
+                <p>Zajmujemy się tworzeniem nowoczesnych stron internetowych oraz oprogramowania pod witryny internetowe. </p>
+                <p>W naszej pracy wykorzystujemy wachlarz najnowszych technologii. Dzięki temu nasze strony są nowoczesne i zgodne z trendami obecnie panującymi w internecie.</p>
+                <p>W naszej pracy wykorzystujemy wachlarz najnowszych technologii. Dzięki temu nasze strony są nowoczesne i zgodne z trendami obecnie panującymi w internecie.</p>
+                <p>Oferujemy programowanie na zamówienie – mini crm-y przeznaczone dla małych i średnich firm, pozwalające na przechowywanie danych firmowych w chmurze.
+Dedykowane rozwiązania ułatwiają prowadzenie działalności. Dzięki temu że dane przechowywane są w chmurze, mają Państwo możliwość dostępu do danych poza firmą. Dane są bezpieczne, ponieważ przechowują je Państwo na własnych hostingach.
+Dedykowane rozwiązania ułatwiają prowadzenie działalności. Dzięki temu że dane przechowywane są w chmurze, mają Państwo możliwość dostępu do danych poza firmą. Dane są bezpieczne, ponieważ przechowują je Państwo na własnych hostingach.</p>
+                <p>Dedykowane rozwiązania ułatwiają prowadzenie działalności. Dzięki temu że dane przechowywane są w chmurze, mają Państwo możliwość dostępu do danych poza firmą. Dane są bezpieczne, ponieważ przechowują je Państwo na własnych hostingach.
+                    Dedykowane rozwiązania ułatwiają prowadzenie działalności. Dzięki </p>
+                <!--<button>POZNAJ  NAS</button>-->
+
+            </article>
+            <!--<aside>aside</aside>-->
+        </div>
+        <footer>
+            <p>CODEBAR &copy;2017</p>
+            <p>03-259 Warszawa<br>Suwalska 31 / 67</p>
+            <p>Tel 883 063 502 </p>
+            <p>biuro@codebar.pl</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script>
+            $(".cross").hide();
+            $(".menu").hide();
+            $(".hamburger").click(function () {
+                $(".menu").slideToggle("slow", function () {
+                    $(".hamburger").hide();
+                    $(".cross").show();
+                });
+            });
+
+            $(".cross").click(function () {
+                $(".menu").slideToggle("slow", function () {
+                    $(".cross").hide();
+                    $(".hamburger").show();
+                });
+            });
+        </script>
+    </body>
+</html>

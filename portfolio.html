@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Strony www, aplikacje internetowe, aplikacje biurowe w chmurze">
+        <title>Portfolio</title>
+        <link href="https://fonts.googleapis.com/css?family=Sarpanch" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet"> 
+        <link rel="stylesheet" href="flex.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">CODEBAR</a>
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+        </header>
+
+        <div id="main" class="conteiner">
+
+            <nav class="menu">
+                <ul>
+                    <li class="flex-item"><a href="onas.html">O nas</a></li>
+                    <li class="flex-item"><a href="">Oferta</a></li>
+                    <li class="flex-item"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="flex-item"><a href="">Skills</a></li>
+                    <li class="flex-item"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </nav>
+
+            <article class="portfolio">
+                <h2>Portfolio</h2>
+            <div class="gallery">
+                    <ul>
+                        <li class="link"><img src="https://cdn.searchenginejournal.com/wp-content/uploads/2015/07/0727-panda-4-2.jpg"></li>
+                        <li class="link"><img src="https://cdn.searchenginejournal.com/wp-content/uploads/2015/07/0727-panda-4-2.jpg"></li>
+                        <li class="link"><img src="https://cdn.searchenginejournal.com/wp-content/uploads/2015/07/0727-panda-4-2.jpg"></li>
+
+                    </ul>
+                </div>
+                <div id="notecards">
+                    <div class="notecard">
+                        <div class="front">
+                            <span class="word">zdjecie</span>
+                        </div>
+                        <div class="back">
+                            <div class="definition">
+                                sprawdz naszą przykładową strone
+                                <div class="photo"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+            <!--<aside>aside</aside>-->
+
+        </div>
+        <footer>
+            <p>CODEBAR &copy;2017</p>
+            <p>03-259 Warszawa<br>Suwalska 31 / 67</p>
+            <p>Tel 883 063 502 </p>
+            <p>biuro@codebar.pl</p>
+        </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        <script>
+            $(".cross").hide();
+            $(".menu").hide();
+            $(".hamburger").click(function () {
+                $(".menu").slideToggle("slow", function () {
+                    $(".hamburger").hide();
+                    $(".cross").show();
+                });
+            });
+
+            $(".cross").click(function () {
+                $(".menu").slideToggle("slow", function () {
+                    $(".cross").hide();
+                    $(".hamburger").show();
+                });
+            });
+        </script>
+    </body>
+</html>

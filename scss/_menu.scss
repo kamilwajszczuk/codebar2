@@ -1,0 +1,123 @@
+.menu{
+    display: flex; 
+    flex-flow: nowrap; 
+    box-sizing: border-box;
+    z-index:1000000;
+    font-weight:bold;
+    font-size:0.8em;
+    width:50px;
+    // background: transparent; 
+    background: #eee;
+    opacity: 1;
+    position:absolute;
+    text-align:right;
+    font-size:1em;
+    right:0; 
+    overflow: hidden;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            display: flex; 
+            flex-flow: nowrap; 
+            justify-content: flex-end;
+            padding:15px;
+            border-bottom:#dddddd 1px solid;
+
+            &:hover{
+                display: flex;
+                flex-flow: nowrap;
+                background: #ffffff;
+                padding:15px;
+                border-bottom:#dddddd 1px solid;
+                opacity: 1;
+                color: black;
+
+                a {
+                    text-decoration:none; 
+                    margin: 0px; 
+                    color:#999;
+
+                    &:hover {  
+                        color:black;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+
+    a{
+        text-decoration:none; 
+        color:#666;
+
+        &:hover{
+            text-decoration:none; 
+            color:black;
+        }
+    }
+}
+
+@media all and (max-width: 620px){
+
+    .menu{
+        z-index:10000000000; 
+        font-weight:bold;
+        width: 100%;
+        //background:#333;
+        background: #eee;
+        position:absolute;
+        text-align:center;
+        font-size:16px;
+        font-weight: bold;
+        overflow: hidden;
+        opacity: 1;
+
+        ul {
+            margin: 0;
+            padding: 0; 
+            list-style-type: none;
+
+            li {
+                display: block;
+                padding:15px 0 15px 0;
+                border-bottom:#dddddd 1px solid;
+
+
+                &:hover{
+                    display: block;  
+                   // background:#444;
+                   background: white;
+                    padding:15px 0 15px 0; 
+                    border-bottom:#dddddd 1px solid;
+                }
+
+                a {
+                    text-decoration:none; 
+                    text-align: center;
+                    margin: 0px; 
+                    color:#666;
+
+                    &:hover { 
+                        color: white;
+                        color: #ffffff;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+        
+        a{
+            text-decoration:none; 
+            color:#666;
+
+            &:hover{
+                text-decoration:none; 
+                color:white;
+            }
+        }
+    }
+}
