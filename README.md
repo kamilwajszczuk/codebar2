@@ -1,4 +1,4 @@
-SKELP
+www.codebar.pl
 =====
 dodałem komentarz
 * li pierwsze
